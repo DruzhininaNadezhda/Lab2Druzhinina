@@ -17,11 +17,10 @@ public class Duration extends VideoFile {
             durations = temp;
         }
     }
-
     public Duration(int durationHour, int durationMinutes, int durationSeconds) {
         super(durationHour, durationMinutes, durationSeconds);
     }
-
+    @Override
     public String toString() {
         return printTime();
     }
