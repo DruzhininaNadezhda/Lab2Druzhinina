@@ -63,6 +63,7 @@ public class AllFile {
         VideoFile videoFile = new VideoFile("BackToTheFuture1.avi", 1470984192, video, "Back to the future I, 1985", 1,48,8,640,352);
         AllFile [] allFiles = new AllFile[]{docFile, audioFile, imageFile1, videoFile};
         printAll(allFiles);
+        System.out.println();
     }
 }
 

@@ -1,6 +1,15 @@
-package UniversityContingent.Peoples;
+package university_contingent.peoples;
+import university_contingent.peoples.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+
+import static university_contingent.peoples.Person.Gender.Man;
+import static university_contingent.peoples.Person.Gender.Woman;
+import static university_contingent.peoples.Person.printAll;
+
 public class Student extends Person {
     levelEducation levelEducation;
     course course;
@@ -45,6 +54,9 @@ public class Student extends Person {
         public String toString() {
             return getLevelEducation();
         }
+    }
+    public static void studentCollection(Collection<? super Student> studentCollection, Student ... student) {
+        studentCollection.addAll(Arrays.asList(student));
     }
     @Override
     public String toString() {

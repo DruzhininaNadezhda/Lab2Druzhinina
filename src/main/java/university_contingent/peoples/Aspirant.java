@@ -1,6 +1,4 @@
-package UniversityContingent.Peoples;
-
-import static UniversityContingent.Peoples.Person.Gender.Woman;
+package university_contingent.peoples;
 
 public class Aspirant extends Person {
     private String dissertation;

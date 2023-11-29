@@ -1,13 +1,10 @@
-package UniversityContingent.Peoples;
+package university_contingent.peoples;
 
 
-import UniversityContingent.Contingent;
+import java.util.Collection;
+import java.util.List;
 
-
-import static UniversityContingent.Peoples.Person.Gender.Man;
-import static UniversityContingent.Peoples.Person.Gender.Woman;
-import UniversityContingent.Peoples.*;
-public class Person {
+public abstract class Person {
     private String name;
     private String surname;
     private String department;
@@ -56,8 +53,8 @@ public class Person {
             return getGender();
         }
     }
-    public static void printAll(Object[] objects) {
-        for (Object value : objects) {
+    public static void printAll(Collection<? extends Person> list) {
+        for (Object value : list) {
             System.out.println(value);
         }
     }

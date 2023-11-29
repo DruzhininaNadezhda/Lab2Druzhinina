@@ -1,6 +1,6 @@
-package UniversityContingent.Peoples;
+package university_contingent.peoples;
 
-public class Professor extends Person{
+public class Professor <E> extends Person{
     private String specialization;
     academicDegree academicDegree;
     public Professor(String name, String surname, Gender gender, String facultyStudent, String specialization,academicDegree academicDegree) {
@@ -30,6 +30,7 @@ public class Professor extends Person{
         public String toString() {
             return degree;
         }
+
     }
     @Override
     public String toString(){
